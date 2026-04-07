@@ -17,7 +17,8 @@ public class Corsconfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         // Allow requests from React!
-                        .allowedOrigins("http://localhost:3000")
+                        .allowedOrigins("http://localhost:3000",
+                        				"https://food-ordering-frontend-flame.vercel.app")
                         // Allow these HTTP methods
                         .allowedMethods("GET", "POST", 
                                         "PUT", "DELETE");
